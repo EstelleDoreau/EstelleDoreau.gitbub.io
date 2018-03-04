@@ -1,0 +1,21 @@
+@media screen and (min-width: 768px) {
+	.carousel-caption {
+	    padding-bottom: 10%;
+	}
+	.carousel-caption p {
+	    font-size: 2em;
+	}
+	.carousel-caption span {
+	    font-size: 0.6em;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.carousel-caption p {
+	    font-size: 3em;
+	}
+	.carousel-caption span {
+	    font-size: 0.8em;
+	}
+}
+

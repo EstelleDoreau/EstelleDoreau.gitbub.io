@@ -1,0 +1,18 @@
+/* button */
+.button-center {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+.button-center a {
+	color: #ff5f01;
+	font-size: 1.6em;
+	padding: 0.5em 1.2em;
+}
+.button-center a.light {
+	background-color: white;
+}
+.button-center a.dark {
+	background-color: #333;
+}

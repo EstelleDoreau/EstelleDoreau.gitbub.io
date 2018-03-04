@@ -1,0 +1,24 @@
+/* panels */
+.panel-default {
+	border: none;
+}
+
+.panel-default .panel-body {
+	background-color: #ddd;
+	color: black;
+}
+
+.panel-default .panel-body table {
+	width: 100%;
+	font-size: 2em;
+}
+
+.panel-default .panel-body table thead {
+	border-bottom: 3px solid #777;
+}
+.panel-default .panel-body table tr:not(:last-child) {
+	border-bottom: 1px solid #999;
+}
+.panel-default .panel-body table tbody tr {
+	color: #999;
+}

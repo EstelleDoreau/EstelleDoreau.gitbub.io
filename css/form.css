@@ -1,0 +1,18 @@
+input, select, textarea {
+	width: 100%;
+	min-height: 40px;
+	margin-bottom: 30px;
+	padding: 0.3em;
+	color: #777;
+	border-radius: 10px;
+	border: none;
+	font-size: 1.4em;
+}
+
+textarea {
+	min-height: 100px;
+}
+
+form label {
+	display: none;
+}

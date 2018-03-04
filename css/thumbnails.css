@@ -1,0 +1,138 @@
+/* Section Fellows */
+
+/* nav tabs */
+.nav-tabs {
+  border-bottom: 0;
+  display: flex;
+  justify-content: center;
+  margin: 1.8em 0;
+}
+
+.nav-tabs>li>a {
+    margin-right: 2px;
+    line-height: 1.42857143;
+    border: none;
+    border-radius: 0;
+    color: grey;
+    font-size: 1.8em;
+    line-height: 0.5;
+}
+
+.nav-tabs>li>a:hover, .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+    color: #ff5f01;
+    background-color: transparent;
+    border-bottom-color: #ff5f01;
+    border: none;
+    border-bottom: 3px solid; 
+
+}
+
+.nav-tabs>li.active>a::before, .nav-tabs>li.active>a::after {
+  content: " b ";
+  font-family: 'tengwar_annatarregular', sans serif;
+  color: #ff5f01;
+  font-size: 0.8em;
+}
+
+
+/* thumbnails init */
+.thumbnail {
+  background-color: black;
+}
+.thumbnail .caption {
+  color: grey;
+  font-size: 2.3em;
+}
+.thumbnail .infos {
+  display: flex;
+  justify-content: center;
+}
+    
+
+/* image effect */
+.thumbnail  img {
+    opacity: 0.5;
+    transition: opacity .25s ease-in-out;
+  	-moz-transition: opacity .25s ease-in-out;
+  	-webkit-transition: opacity .25s ease-in-out;
+  	width: 100%; 
+    height: 100%;
+}
+
+@media (min-width: 768px) {
+  .thumbnail  img {
+    min-height: 401px;
+    max-height: 401px;
+}
+}
+.thumbnail  img:hover {
+    opacity: 1;
+}
+
+/* text init */
+.thumbnail .infos header, .thumbnail .infos .status {
+    position: absolute;
+    text-align: center;
+}
+.thumbnail .infos header {
+	 top: 40%;
+    color: white;
+    font-size: 1.5em;
+    transition: top font-size .25s ease-in-out;
+  	-moz-transition: top font-size .25s ease-in-out;
+  	-webkit-transition:top  font-size .25s ease-in-out;    
+}
+
+.thumbnail .infos header h4 { 
+  font-size: 1.5em;
+}
+
+.thumbnail  img:hover ~ .infos header {
+	top: 60%;
+	font-size: 1.5em;
+  pointer-events: none;
+  touch-action: none;
+}
+.thumbnail  img:hover ~ .infos header h4 {
+  font-size: 18px;
+  pointer-events: none;
+  touch-action: none;
+}
+.thumbnail .infos .status {
+    top: 0;
+    opacity: 0.9;
+    padding: 0.2em 2em;
+    margin: 0.6em 0;
+     transition: display .25s ease-in-out;
+  	-moz-transition: display .25s ease-in-out;
+  	-webkit-transition: display .25s ease-in-out;
+}
+.thumbnail  img:hover ~ .infos .status {
+	display: none;
+}
+
+
+
+/* living people */
+.thumbnail  .infos .status.living {
+  font-size: 2em;
+  background: white;
+  border-radius: 15px;
+}
+.thumbnail  .infos .status.living span {
+  color: #ff5f01;
+}
+
+
+/* dead people */
+.thumbnail  .infos .status.dead {
+  font-size: 3em;
+  color: #ff5f01;
+}
+.thumbnail .infos .status.dead ~ header h4 {
+  text-decoration: line-through;
+  text-decoration-color: #ff5f01;
+}
+.thumbnail img:hover ~ .infos .status.dead ~ header h4 {
+  text-decoration: none;
+}
